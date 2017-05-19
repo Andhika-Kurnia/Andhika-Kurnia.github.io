@@ -20,9 +20,36 @@
 			padding: 2em 0 1em 0;
 			opacity: 0.5;
 		}
-
 		section ul {
 			list-style: none;
+		}
+		header h2::before, header h2::after{
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			zoom: 1;
+			padding: 0px 15px;
+			margin: 0 10px;
+			height: 1px;
+			border-bottom: 1px solid #ddd;
+		}
+		#main > section {
+			border:none !important;
+		}
+		.fa-4{
+			font-size: 3em;
+		}
+		#skill article{
+			border-left: 3px solid #dfdfdf;
+			padding: 5px 0 0 15px !important;
+			text-align: left;
+		}
+		#skill{
+			margin:0;
+		}
+		.avatar img{
+			opacity: 0.7;
+			filter: alpha(opacity=70); /* For IE8 and earlier */
 		}
 	</style>
 </head>
@@ -32,7 +59,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+			<a href="#" class="image avatar"><img src="images/avatar.jpg" alt=""/></a>
 			<h1><strong>I am Andhika Kurnia Harryajie</strong></h1>
 			<span style="font-weight:100;">
 						Student at Universitas Gadjah Mada<br/>
@@ -51,8 +78,8 @@
 			<header class="major">
 				<h2>Profile</h2>
 			</header>
-			<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet
-				id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+			<p>Big Data Researcher with Clustering Algorithm,Tech Product Development,Front End Developer, and Designer.<br>
+				Specialities : Front End Development, Product Management, Data Analyst.</p>
 			<!-- <ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul> -->
@@ -61,6 +88,7 @@
 		<!-- Two -->
 		<section id="two">
 			<header class="major">
+				<span class="fa fa-graduation-cap fa-4"></span>
 				<h2>Education</h2>
 			</header>
 			<div class="row">
@@ -80,6 +108,7 @@
 		<!-- Three -->
 		<section id="two">
 			<header class="major">
+				<span class="fa fa-briefcase fa-4"></span>
 				<h2>Experience</h2>
 			</header>
 			<h2 style="color:#49bf9d;">Work Experience</h2>
@@ -161,73 +190,106 @@
 					</p>
 				</article>
 			</div>
-		</section>
-
-		<!-- Four -->
-		<section id="four">
-			<header class="major">
-				<h2>Education</h2>
-			</header>
-			<div class="row">
-				<article class="6u 12u$(xsmall) work-item">
-					<h3>Bachelors Degree</h3>
-					<span>Universitas Gadjah Mada, 2013 - 2017</span>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+			<h2 style="color:#49bf9d;">Skills</h2>
+			<div id="skill" class="row">
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Web Design</h3>
 				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<h3>Senior High School</h3>
-					<span>SMAN 1 Tambun Selatan, 2010 - 2013</span>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Data Mining</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Team Work</h3>
+				</article>
+				<article class="3u$ 12u$(xsmall) work-item">
+					<h3>User Interface Design</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>C++</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Big Data Analytics</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>User Experience Design</h3>
+				</article>
+				<article class="3u$ 12u$(xsmall) work-item">
+					<h3>Project Planning</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Apache Spark</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Graphic Design</h3>
+				</article>
+				<article class="3u 12u$(xsmall) work-item">
+					<h3>Front End Development</h3>
+				</article>
+				<article class="3u$ 12u$(xsmall) work-item">
+					<h3>Hadoop</h3>
 				</article>
 			</div>
 		</section>
 
 		<!-- Two -->
-		<section id="two">
-			<h2>Work</h2>
+		<section id="five">
+			<header class="major">
+				<span class="fa fa-laptop fa-4"></span>
+				<h2>Work</h2>
+			</header>
 			<div class="row">
 				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-					<h3>Magna sed consequat tempus</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+					<a href="http://coass.id/" class="image fit thumb"><img src="images/coass.png" alt="" /></a>
+					<h3>COASS</h3>
+					<p>-website-</p>
 				</article>
 				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-					<h3>Ultricies lacinia interdum</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+					<a href="http://nasyiah.esy.es/" class="image fit thumb"><img src="images/nasyiah.png" alt="" /></a>
+					<h3>Nasyiatul Aisyiyah</h3>
+					<p>-website-</p>
 				</article>
 				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-					<h3>Tortor metus commodo</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-					<h3>Quam neque phasellus</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-					<h3>Nunc enim commodo aliquet</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-					<h3>Risus ornare lacinia</h3>
-					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+					<a href="http://icfurqon.com/" class="image fit thumb"><img src="images/icfurqon.png" alt="" /></a>
+					<h3>Insan Cendikia Furqoni</h3>
+					<p>-website-</p>
 				</article>
 			</div>
-			<ul class="actions">
+			<!-- <ul class="actions">
 				<li><a href="#" class="button">Full Portfolio</a></li>
-			</ul>
+			</ul> -->
+		</section>
+
+		<!-- Two -->
+		<section id="five">
+			<header class="major">
+				<span class="fa fa-trophy fa-4"></span>
+				<h2>Achievement</h2>
+				<div class="row">
+					<article class="6u 12u$(xsmall) work-item">
+						<h3>1st Winner ESPRIEX Business Model Competition</h3>
+						<span>COASS</span>
+						<p>2017</p>
+					</article>
+					<article class="6u$ 12u$(xsmall) work-item">
+						<h3>Finalist of C-Compiler UI/UX Competition</h3>
+						<span>Elephant Project</span>
+						<p>2015</p>
+					</article>
+					<article class="6u$ 12u$(xsmall) work-item">
+						<h3>Finalist of Pestagama Competition</h3>
+						<span>Team</span>
+						<p>2014</p>
+					</article>
+				</div>
+			</header>
+
 		</section>
 
 		<!-- Three -->
 		<section id="three">
 			<h2>Get In Touch</h2>
-			<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 			<div class="row">
-				<div class="8u 12u$(small)">
+				<div class="12u$ 12u$(small)">
 					<form method="post" action="#">
 						<div class="row uniform 50%">
 							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -237,20 +299,6 @@
 					</form>
 					<ul class="actions">
 						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</div>
-				<div class="4u$ 12u$(small)">
-					<ul class="labeled-icons">
-						<li>
-							<h3 class="icon fa-home"><span class="label">Address</span></h3> 1234 Somewhere Rd.<br /> Nashville, TN 00000<br /> United States
-						</li>
-						<li>
-							<h3 class="icon fa-mobile"><span class="label">Phone</span></h3> 000-000-0000
-						</li>
-						<li>
-							<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-							<a href="#">hello@untitled.tld</a>
-						</li>
 					</ul>
 				</div>
 			</div>
@@ -582,10 +630,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<footer id="footer">
 		<div class="inner">
 			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				<li><a href="https://twitter.com/andikaru" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://github.com/Andhika-Kurnia" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="linkedin.com/in/andhika-kurnia-harryajie" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; Untitled</li>
